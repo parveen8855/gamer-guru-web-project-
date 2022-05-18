@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameGuru</title>
+    {{!--
+    <link rel="stylesheet" href="css/cart.css"> --}}
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <nav class="nav-top">
+        <div class="nav-left">
+            <img src="/images final/logo.png" alt="">
+            <div><a href="/">GAMER GURU</a></div>
+        </div>
+        <ul>
+            <li class="nav-centre">
+                <h1>Added Item</h1> <span>0</span>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <button id="login"><a class="lclick" href="/login">LOG IN</a></button>
+            <button id="signup"><a class="sclick" href="/signin">SIGN UP</a></button>
+            <button id="signup"><a class="sclick" href="/step3">Back</a></button>
+        </div>
+    </nav>
+    <section>
+        <div class='container'>
+            <div class='window'>
+                <div class='credit-info'>
+                    <div class='credit-info-content'>
+                        <table class='half-input-table'>
+                            <tr>
+                                <td>Please select your card: </td>
+                                <td>
+                                    <div class='dropdown' id='card-dropdown'>
+                                        <div class='dropdown-btn' id='current-card'>Visa</div>
+                                        <div class='dropdown-select'>
+                                            <ul>
+                                                <li>Master Card</li>
+                                                <li>American Express</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png'
+                            height='80' class='credit-card-image' id='credit-card-image'></img>
+                        Card Number
+                        <input id="card_name" class='input-field'></input>
+                        Card Holder
+                        <input id="card_holder" class='input-field'></input>
+                        <table class='half-input-table'>
+                            <tr>
+                                <td> Expires Year
+                                    <input id="expires" class='input-field'></input>
+                                </td>
+                                <td>CVC
+                                    <input id="cvc" class='input-field'></input>
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="validCard()" class='pay-btn'>Checkout</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo"><img src="/images final/logo.png" alt=""></div>
+        <div class="footer-text">GAMER GURU</div>
+        <div class="footer-copyright">© 2022 Gamer Sensei. All Rights Reserved.</div>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
